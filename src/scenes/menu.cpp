@@ -11,6 +11,8 @@ Menu::Menu(salmon::MapRef map, SceneManager* scene_manager) :
     GameScene(map,scene_manager) {}
 
 void Menu::init() {
+    m_scene_manager->set_linear_filtering(false);
+    m_scene_manager->next_scene("stage1.tmx");
     m_scene_manager->set_game_resolution(960,720);
     m_scene_manager->set_fullscreen(false);
     m_scene_manager->set_window_size(960,720);
