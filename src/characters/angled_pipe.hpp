@@ -18,6 +18,13 @@ class AngledPipe : public Draggable {
         static const char* type;
     protected:
         // Add members here
+        /*
+         0 = down_right
+         1 = down_left
+         2 = up_right
+         3 = up_left
+        */
+        int dir;
 
     private:
         static const bool good;
